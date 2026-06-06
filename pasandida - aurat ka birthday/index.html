@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="floating-hearts" id="floating-hearts"></div>
+
+  <div class="pass-box">
+
+    <!-- Profile pic -->
+    <div class="profile-pic" onclick="document.getElementById('pic-input').click()">
+      <input type="file" id="pic-input" accept="image/*" style="display:none" onchange="previewPic(event)">
+      <img id="pic-preview" src="" alt="">
+      <div id="pic-placeholder">🤍</div>
+    </div>
+
+    <div class="gf-name">My gf/bf name 💋</div>  
+
+    <h2>ENTER THE SPECIAL DATE</h2>
+    <div class="hint">DD MM YYYY</div>
+
+    <div class="hearts-row" id="hearts-row"></div>
+    <div class="msg" id="msg"></div>
+
+    <div class="keypad">
+      <button class="key" onclick="press(1)">1</button>
+      <button class="key" onclick="press(2)">2</button>
+      <button class="key" onclick="press(3)">3</button>
+      <button class="key" onclick="press(4)">4</button>
+      <button class="key" onclick="press(5)">5</button>
+      <button class="key" onclick="press(6)">6</button>
+      <button class="key" onclick="press(7)">7</button>
+      <button class="key" onclick="press(8)">8</button>
+      <button class="key" onclick="press(9)">9</button>
+      <button class="key zero" onclick="press(0)">0</button>
+      <button class="key del" onclick="del()">←</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
